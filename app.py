@@ -36,7 +36,7 @@ elif modulos == "Funciones":
   capital_i = st.number_input("Ingrese el capital inicial", min_value = 0 , max_value = 100000, value=1000)
   aporte_m = st.number_input("Ingrese el aporte mensual", min_value = 0 , max_value = 10000, value=100)
   tasa_a = st.slider("Ingrese el aporte mensual", min_value = 0.01 , max_value = 1.00, value=0.05)
-  anios = st.slider("Ingrese el aporte mensual", min_value = 1 , max_value = 20, value=2)
+  anios = st.slider("Ingrese los años", min_value = 1 , max_value = 20, value=2)
 
   resultado_valor_futuro = lf.valor_futuro_inversion(capital_i ,aporte_m,tasa_a,anios)
   st.write("El resultados de tu valor futuro de inversión es: ",round(resultado_valor_futuro,2))
