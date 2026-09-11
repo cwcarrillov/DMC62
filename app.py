@@ -39,7 +39,7 @@ elif modulos == "Funciones":
   anios = st.slider("Ingrese el aporte mensual", min_value = 1 , max_value = 20, value=2)
 
   resultado_valor_futuro = lf.valor_futuro_inversion(capital_i ,aporte_m,tasa_a,anios)
-  st.write("El resultados de tu valor futuro de inversión es: ",resultado_valor_futuro)
+  st.write("El resultados de tu valor futuro de inversión es: ",round(resultado_valor_futuro,2))
   
 else:
   st.write("Te encuentras en el módulo de POO")
